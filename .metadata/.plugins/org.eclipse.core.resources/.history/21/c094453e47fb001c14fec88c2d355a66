@@ -26,7 +26,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.Toolkit;
 
 public class frmLogin {
 
@@ -62,7 +61,6 @@ public class frmLogin {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setIconImage(Toolkit.getDefaultToolkit().getImage(frmLogin.class.getResource("/img/ventas.png")));
 		frame.setBounds(100, 100, 907, 605);
 		frame.setResizable(false);
 		frame.setTitle("Login - Sistema de Ventas");
@@ -132,6 +130,15 @@ public class frmLogin {
 		panel_1.add(Campo_Usuario);
 		
 		Campo_Password = new JPasswordField();
+		Campo_Password.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if (e.getKeyCode() == e.VK_ENTER) {
+				this.Login();
+				}
+			}
+		});
+		
 		Campo_Password.setBounds(149, 382, 224, 37);
 		panel_1.add(Campo_Password);
 		

@@ -10,4 +10,10 @@
 		<item key="width" value="960"/>
 		<item key="height" value="510"/>
 	</section>
+	<section name="org.eclipse.wb.internal.core.model.util.RenameConvertSupport$RenameDialog">
+		<item key="x" value="522"/>
+		<item key="y" value="275"/>
+		<item key="width" value="875"/>
+		<item key="height" value="469"/>
+	</section>
 </section>

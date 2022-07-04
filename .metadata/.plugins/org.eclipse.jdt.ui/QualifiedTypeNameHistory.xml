@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
+    <fullyQualifiedTypeName name="Conexion.Conexion"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="Controlador.Control_Usuario"/>
+    <fullyQualifiedTypeName name="Modelo.Usuario"/>
     <fullyQualifiedTypeName name="java.awt.Dimension"/>
 </qualifiedTypeNameHistroy>
