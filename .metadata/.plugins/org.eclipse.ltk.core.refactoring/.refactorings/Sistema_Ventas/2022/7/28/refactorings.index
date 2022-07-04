@@ -1,0 +1,12 @@
+1656876203641	Delete element
+1656884417523	Delete element
+1656890712512	Encapsulate field 'idUsuario'
+1656890740798	Encapsulate field 'nombre'
+1656890766918	Encapsulate field 'apellido_paterno'
+1656890785861	Encapsulate field 'apellido_materno'
+1656891038327	Encapsulate field 'password'
+1656891070297	Encapsulate field 'usuario'
+1656891090110	Encapsulate field 'telefono'
+1656891120639	Encapsulate field 'estado'
+1656891139478	Encapsulate field 'tipo_usuario'
+1656891161700	Encapsulate field 'correo_electronico'

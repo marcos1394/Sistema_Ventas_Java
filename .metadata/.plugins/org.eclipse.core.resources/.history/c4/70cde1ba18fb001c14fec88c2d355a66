@@ -1,0 +1,90 @@
+package Vista;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Panel;
+import java.awt.FlowLayout;
+import java.awt.Color;
+import java.awt.GridLayout;
+import javax.swing.border.EtchedBorder;
+import javax.swing.BoxLayout;
+import java.awt.CardLayout;
+import java.awt.GridBagLayout;
+import com.jgoodies.forms.layout.FormLayout;
+import com.jgoodies.forms.layout.ColumnSpec;
+import com.jgoodies.forms.layout.RowSpec;
+import javax.swing.UIManager;
+import java.awt.Label;
+import java.awt.Font;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.ComponentOrientation;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+public class frmLogin extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					frmLogin frame = new frmLogin();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public frmLogin() {
+		// con este metodo hacemos que no se reajustable la pantalla
+		this.setResizable(false);
+		// con este metodo hacemos que no sea localizada la pantalla con relación a algo
+		this.setLocationRelativeTo(null);
+		// con este metodo establecemos el titulo
+		this.setTitle("Login - Sistema de Ventas");
+		// con este metodo establecemos el tamaño
+		this.setSize(new Dimension(895, 617));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		contentPane = new JPanel();
+		contentPane.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+		
+		Panel Panel_Fondo = new Panel();
+		Panel_Fondo.setMaximumSize(new Dimension(250, 500));
+		Panel_Fondo.setBackground(UIManager.getColor("EditorPane.selectionBackground"));
+		contentPane.add(Panel_Fondo, BorderLayout.WEST);
+		Panel_Fondo.setLayout(new FlowLayout(FlowLayout.CENTER, 180, 500));
+		
+		JLabel lblNewLabel = new JLabel("Sistema de Ventas");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setForeground(Color.WHITE);
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel.setVerticalAlignment(SwingConstants.TOP);
+		Panel_Fondo.add(lblNewLabel);
+		
+		Panel Panel_Ingreso = new Panel();
+		Panel_Ingreso.setMaximumSize(new Dimension(250, 500));
+		Panel_Ingreso.setBackground(Color.WHITE);
+		contentPane.add(Panel_Ingreso, BorderLayout.CENTER);
+		Panel_Ingreso.setLayout(new FlowLayout(FlowLayout.CENTER, 250, 500));
+	}
+
+}

@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\marcos.sandovalr\Documents\Marcos Privada\Sistema_Ventas_Java\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+910998275.index
+198743737.index
+2195362468.index
+1074924972.index

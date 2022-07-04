@@ -1,0 +1,30 @@
+package Modelo;
+
+public class Usuario {
+	
+	// Atributos
+	private int idUsuario;
+	private String nombre;
+	private String apellido_paterno;
+	private String apellido_materno;
+	private String usuario;
+	private String password;
+	private int telefono;
+	private int estado;
+	private int tipo_usuario;
+	private String correo_electronico;
+	
+	//Constructor
+	public Usuario () {
+		this.idUsuario = 0;
+		this.nombre = "";
+		this.apellido_paterno = "";
+		this.apellido_materno = "";
+		this.usuario = "";
+		this.password = "";
+		this.telefono = 0;
+		this.correo_electronico = "";
+		this.tipo_usuario = 0;
+		this.estado = 0;
+	}
+}

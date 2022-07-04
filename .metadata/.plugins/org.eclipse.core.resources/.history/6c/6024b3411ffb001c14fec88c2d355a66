@@ -1,0 +1,85 @@
+package Vista;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import java.awt.Panel;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.Rectangle;
+import javax.swing.UIManager;
+import java.awt.Label;
+import java.awt.Font;
+import javax.swing.JLabel;
+import java.awt.Color;
+import javax.swing.ImageIcon;
+
+public class frmLogin {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					frmLogin window = new frmLogin();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public frmLogin() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 907, 605);
+		frame.setResizable(false);
+		frame.setTitle("Login - Sistema de Ventas");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		Panel panel = new Panel();
+		panel.setBackground(UIManager.getColor("CheckBoxMenuItem.selectionBackground"));
+		panel.setBounds(10, 10, 444, 558);
+		frame.getContentPane().add(panel);
+		panel.setLayout(null);
+		
+		JLabel Etiqueta_Sistema_Ventas = new JLabel("Sistema de Ventas");
+		Etiqueta_Sistema_Ventas.setForeground(UIManager.getColor("Button.disabledShadow"));
+		Etiqueta_Sistema_Ventas.setFont(new Font("Arial", Font.BOLD, 26));
+		Etiqueta_Sistema_Ventas.setBounds(81, 123, 242, 67);
+		panel.add(Etiqueta_Sistema_Ventas);
+		
+		JLabel Logo_Sistema_Ventas = new JLabel("");
+		Logo_Sistema_Ventas.setIcon(new ImageIcon(frmLogin.class.getResource("/img/carrito1.png")));
+		Logo_Sistema_Ventas.setForeground(Color.WHITE);
+		Logo_Sistema_Ventas.setFont(new Font("Arial", Font.BOLD, 26));
+		Logo_Sistema_Ventas.setBounds(122, 201, 150, 136);
+		panel.add(Logo_Sistema_Ventas);
+		
+		JLabel Etiqueta_Qubits = new JLabel("Qubits");
+		Etiqueta_Qubits.setForeground(Color.WHITE);
+		Etiqueta_Qubits.setFont(new Font("Arial", Font.BOLD, 26));
+		Etiqueta_Qubits.setBounds(156, 363, 93, 67);
+		panel.add(Etiqueta_Qubits);
+		
+		Panel panel_1 = new Panel();
+		panel_1.setBounds(449, 10, 444, 558);
+		frame.getContentPane().add(panel_1);
+		panel_1.setLayout(null);
+	}
+}

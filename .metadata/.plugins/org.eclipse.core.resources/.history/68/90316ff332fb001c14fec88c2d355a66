@@ -1,0 +1,3 @@
+module Sistema_Ventas {
+	requires java.desktop;
+}
