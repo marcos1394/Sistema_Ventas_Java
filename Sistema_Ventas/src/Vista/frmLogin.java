@@ -4,20 +4,17 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import java.awt.Panel;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Rectangle;
 import javax.swing.UIManager;
 
 import Controlador.Control_Usuario;
 import Modelo.Usuario;
 
-import java.awt.Label;
 import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Color;
+
 import javax.swing.ImageIcon;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
@@ -27,6 +24,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.Toolkit;
+import java.awt.Window;
 
 public class frmLogin {
 
@@ -155,7 +153,10 @@ public class frmLogin {
 					usuario.setUsuario(Campo_Usuario.getText().trim());
 					usuario.setPassword(Campo_Password.getText().trim());
 					if(controlUsuario.loginUser(usuario)) {
-						JOptionPane.showMessageDialog(null, "Login Correcto..");
+
+							frmMenu21 menu = new frmMenu21();
+							menu.frmMenuSistema.setVisible(true);
+							frame.setVisible(false);
 					}else {
 						JOptionPane.showMessageDialog(null, "Usuario o Clave Incorrecto");
 					}

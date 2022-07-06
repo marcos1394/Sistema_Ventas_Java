@@ -10,5 +10,6 @@
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="Controlador.Control_Usuario"/>
     <fullyQualifiedTypeName name="Modelo.Usuario"/>
+    <fullyQualifiedTypeName name="java.awt.Toolkit"/>
     <fullyQualifiedTypeName name="java.awt.Dimension"/>
 </qualifiedTypeNameHistroy>
